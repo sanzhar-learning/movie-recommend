@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen" class="screen">
+        <div class="login-card">
+            <h1>Movie Chat</h1>
+            <p>Get personalized movie recommendations</p>
+            <form id="login-form">
+                <input type="text" id="username-input" placeholder="Enter your username" autocomplete="off" required minlength="2" maxlength="30">
+                <button type="submit">Start Chatting</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Screen -->
+    <div id="chat-screen" class="screen hidden">
+        <header>
+            <h2>Movie Chat</h2>
+            <div class="header-right">
+                <button id="reset-btn" title="Reset recommendations">Reset</button>
+                <span id="user-label"></span>
+            </div>
+        </header>
+        <div id="messages"></div>
+        <form id="chat-form">
+            <input type="text" id="message-input" placeholder="Type a message... (try 'help')" autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
